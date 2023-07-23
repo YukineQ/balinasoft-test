@@ -11,7 +11,8 @@ import MovieCard from '../components/MovieCard.vue';
 <template>
     <Container class="flex-col pt-[39px]">
         <div class="flex relative flex-col lg:flex-row gap-5">
-            <img src="src/assets/movies/megan.jpg" class="
+            <img src="@/assets/movies/megan.jpg" 
+                class="
                     hidden 
                     lg:flex 
                     flex-none 
@@ -60,7 +61,7 @@ import MovieCard from '../components/MovieCard.vue';
                         <Chip title="16+" />
                     </div>
                     <div class="h-[480px] w-full relative lg:hidden flex">
-                        <img src="src/assets/movies/Fortune.jpg" class="object-cover" />
+                        <img src="@/assets/movies/Fortune.jpg" class="object-cover" />
                         <div class="absolute w-full h-full bg-gradient-to-b from-stone-900/0 to-[#261121]"></div>
                     </div>
                 </div>

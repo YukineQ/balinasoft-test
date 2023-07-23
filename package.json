@@ -1,4 +1,5 @@
 {
+  "homepage": "https://yukineq.github.io/balinasoft-test/",
   "name": "balina-test",
   "private": true,
   "version": "0.0.0",
@@ -6,8 +7,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
-  },
+    "preview": "vite preview",
+    "publish": "npm run build && rm -rf docs; cp -r dist docs && sed -i -e 's/src=\\//src=/g' docs/index.html ; sed -i -e 's/href=\\//href=/g' docs/index.html"
+ },
   "dependencies": {
     "@heroicons/vue": "^2.0.18",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
